@@ -1,0 +1,51 @@
+#left-sidebar{
+
+  position: fixed;
+  width: 210px;
+  /*height: 387px;*/
+  bottom: auto;
+  top: 0;
+  /* fallback */
+  background-color: #dc2430;
+  background: url(../images/left-sidebar.png);
+  background-repeat: repeat-x;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dc2430), to(#853f91));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #853f91, #dc2430);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #853f91, #dc2430);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #853f91, #dc2430);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #853f91, #dc2430);
+
+  -webkit-box-shadow: 10px 0px 10px -8px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 0px 10px -8px rgba(0,0,0,0.4);
+box-shadow: 10px 0px 10px -8px rgba(0,0,0,0.4);
+}
+
+.submenu{
+	color: #fff;
+	padding: 10px 10px 10px 15px;
+	display: block;
+
+}
+a.submenu>i{
+	margin-right: 10px;
+}
+a.submenu:hover, a.submenu:focus{
+	color: #f94876;
+	background-color: #1b2432;
+	text-decoration: none;
+}
+.menu-active{
+	color: #f94876;
+	background-color: #1b2432;
+	text-decoration: none;
+}
