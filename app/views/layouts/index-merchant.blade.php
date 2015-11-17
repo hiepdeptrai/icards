@@ -22,10 +22,14 @@
   </head>
   <body>
 
-    
-            @include('merchant.left-sidebar')
+            <div class="col-md-3 left-section">
+              
+            </div>
+            <!-- @include('merchant.left-sidebar') -->
         
-            @yield('content')
+            <div class="col-md-9 right-section">
+              @yield('content')
+            </div>
         
         
     </div>

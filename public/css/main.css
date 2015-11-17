@@ -1,10 +1,10 @@
 #left-sidebar{
 
-  position: fixed;
-  width: 210px;
+  /*position: fixed;*/
+  /*width: 210px;*/
   /*height: 387px;*/
-  bottom: auto;
-  top: 0;
+  /*bottom: auto;*/
+  /*top: 0;*/ 
   /* fallback */
   background-color: #dc2430;
   background: url(../images/left-sidebar.png);
@@ -48,4 +48,146 @@ a.submenu:hover, a.submenu:focus{
 	color: #f94876;
 	background-color: #1b2432;
 	text-decoration: none;
+}
+
+/* start login.blade.php */
+
+.container-login {
+  background: linear-gradient(to bottom, #51374e, #5f333e);
+  width: 410px;
+  border: 1px solid #ddd;
+  margin:  150px auto;
+  padding: 15px;
+}
+
+.wrap-login {
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  background-color: white;
+  margin: 10px;
+}
+
+.container-form {
+  background-color: #d7d7d7;
+  padding: 10px;
+  margin: 25px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.container-form .form-group button:hover {
+  background-color: #f94876;
+}
+
+.account-info {
+  background-color: #d7d7d7;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-right: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.account-info button {
+  border: none;
+  background: none;
+  color: red;
+  position: inherit;
+  float: right;
+
+}
+
+.forgot-pass {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-pass a {
+  color: black;
+}
+/* end login.blade.php */
+
+
+/* start create-card.blade.php */
+.right-section {
+  /*height: auto;*/
+}
+.header-card {
+  /*border-bottom: 1px solid #eff0f1;*/
+  /*height: 200px;*/
+}
+
+.header-top-card {
+  height: 40px;
+  padding: 9px;
+  border-bottom: 1px solid #eff0f1;
+}
+
+.header-top-left-card div {
+  margin-right: 45px;
+  color: #abaeba;
+  float: left;
+}
+
+.header-top-right-card {
+  text-align: right;
+}
+
+.header-top-right-card a {
+  margin-left: 15px;
+  color: #abaeba;
+}
+
+.header-top-right-card a i {
+  margin-left: 5px;
+}
+
+.header-top-right-card a i.fa-cloud-upload {
+  color: #f94876;
+}
+
+.header-bot-card {
+  text-align: center;
+}
+
+.header-bot-card h1 {
+  color: #f94876;
+}
+
+.menu-bar-card {
+  list-style-type: none;
+  margin: 0;
+}
+.menu-bar-card li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.menu-bar-card li a {
+  color: #9197a3;
+  font-size: 14px;
+}
+
+.current {
+  color: #f94876 !important;  
+}
+
+.content-card {
+  background-color: #f1f2f3;
+  height: auto;
+  padding: 20px 100px 80px 100px;
+}
+
+.content-detail-card {
+  background-color: #ffffff;
+  height: auto;
+}
+
+.menu-bar-card span {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }

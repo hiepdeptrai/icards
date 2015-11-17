@@ -43,3 +43,8 @@ Route::get('/', function()
 {
 	return View::make('merchant.index');
 });
+
+Route::controller('merchant','LoginMerchantController');
+Route::get('create-card', function(){
+	return View::make('merchant.create-card');
+});
