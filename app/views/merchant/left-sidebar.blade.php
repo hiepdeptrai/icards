@@ -1,4 +1,4 @@
-<div class="col-md-3 left-section text-center" id="left-sidebar">
+<div class="text-center" id="left-sidebar">
 	<div class="row text-center" style="padding:30px 0px;margin:0px;">
 		<image src = "{{URL::asset('')}}images/logo-default.png" title="Logo" width="50%;"> 
 		<p style="text-transform: uppercase; margin-top:10px;color:#fff;margin-bottom: 0px;">welcome! boss!</p>

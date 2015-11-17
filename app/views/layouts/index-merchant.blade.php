@@ -12,6 +12,7 @@
     <link href="{{URL::asset('')}}css/font-awesome.min.css" rel="stylesheet">
     <link href="{{URL::asset('')}}css/normalize.css" rel="stylesheet">
     <link href="{{URL::asset('')}}css/main.css" rel="stylesheet">
+    <link href="{{URL::asset('')}}css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,14 +23,10 @@
   </head>
   <body>
 
-            <div class="col-md-3 left-section">
-              
-            </div>
+    
             <!-- @include('merchant.left-sidebar') -->
         
-            <div class="col-md-9 right-section">
-              @yield('content')
-            </div>
+            @yield('content')
         
         
     </div>
