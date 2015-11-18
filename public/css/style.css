@@ -1,0 +1,175 @@
+.left-section {
+	background: linear-gradient(to bottom, #843f92, #dc2430);
+	height: 768px;
+}
+
+.logo {
+	text-align: center;
+	color: white;
+}
+.logo img {
+	width: 35%;
+	height: 35%;
+}
+
+.logo a {
+	color: white;
+}
+
+.menu-left-bar {
+	margin-top:50px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+.menu-left-bar ul {
+	list-style-type: none;
+}
+
+.menu-left-bar ul li {
+	color: white;
+}
+
+.menu-left-bar ul li a {
+	color: white;
+}
+
+.menu-left-bar ul li a i {
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.footer-bar {
+	margin-top: 150px;
+}
+
+.content {
+	background-color: #f1f2f3;
+}
+
+.main-content {
+	background-color: white;
+	margin: 2% 10% 5% 10%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 1px #888888;
+}
+
+.create-card {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.trademark-info {
+	margin-bottom: 20px;
+}
+
+.trademark-info .title-trademark {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 
+}
+
+.trademark-info div {
+	margin-bottom: 15px;
+}
+
+.trademark-info h3 {
+	color: #f94876;
+}
+
+.trademark-info input {
+	border-radius: 5px;
+}
+
+.trademark-info .img-circle {
+	width: 15%;
+	height: 15%;
+}
+
+.user-info .title-user {
+	border-bottom: 1px solid #ddd;
+}
+
+.user-info h3 {
+	color: #f94876;
+}
+
+.user-info div, select {
+	margin-bottom: 15px;
+}
+
+.user-info input, select {
+	border-radius: 5px;
+}
+
+.user-info input {
+	size: 30px;
+}
+
+.force-field {
+	color: #f94876;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.button-save button {
+	background-color: #f94876;
+	border-radius: 5px;
+}
+
+.input-field {
+	margin-left: 50px;
+}
+
+.birthday {
+	color: #808080;
+}
+
+.img-logo {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	text-align: left;
+	font-size: 35px;
+    text-align: center;
+    padding-top: 4px;
+    color: #808080;
+}
+
+.label-logo {
+	text-align: left;
+	padding-top: 15px;
+	color: #808080;
+}
+
+.menu-bar-card span {
+	margin-right: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    background-color: #f94876;
+    border-radius: 50%;
+}
+
+.upload-img {
+	visibility: hidden;
+}
+
+.day {
+    width: 65px;
+    float: left;
+    margin-right: 5px;
+}
+
+.month {
+	width: 110px;
+    float: left;
+    margin-right: 5px;
+}
+
+.year {
+	width: 83px;
+    float: left;
+}

@@ -46,5 +46,5 @@ Route::get('/', function()
 
 Route::controller('merchant','LoginMerchantController');
 Route::get('create-card', function(){
-	return View::make('merchant.create-card');
+	return View::make('merchant.merchant-leftbar');
 });
