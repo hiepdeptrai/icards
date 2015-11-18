@@ -18,9 +18,7 @@ class CreateInfoUsersTable extends Migration {
 			$table->integer('user_id');
 			$table->string('name');
 			$table->string('avatar')->nullable();
-			$table->integer('birth_day')->nullable();
-			$table->integer('birth_month')->nullable();
-			$table->integer('birth_year')->nullable();
+			$table->integer('birthday')->nullable();
 			$table->string('address')->nullable();
 			$table->string('city')->nullable();
 			$table->string('district')->nullable();

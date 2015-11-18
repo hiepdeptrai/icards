@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStoresTable extends Migration {
+class CreateMerchantAccountStoresTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,11 @@ class CreateStoresTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('stores', function(Blueprint $table)
+		Schema::create('merchant_account_stores', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('user_id');
 			$table->integer('merchant_id');
-			$table->string('name');
 			$table->timestamps();
 		});
 	}
@@ -28,7 +28,7 @@ class CreateStoresTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('stores');
+		Schema::drop('merchant_account_stores');
 	}
 
 }

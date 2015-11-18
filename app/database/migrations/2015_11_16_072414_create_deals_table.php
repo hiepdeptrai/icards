@@ -15,6 +15,7 @@ class CreateDealsTable extends Migration {
 		Schema::create('deals', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('merchant_store_id');
 			$table->integer('merchant_id');
 			$table->string('name');
 			$table->text('description');

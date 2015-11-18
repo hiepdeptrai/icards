@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFeedbacksTable extends Migration {
+class CreateNotificationsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,16 @@ class CreateFeedbacksTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('feedbacks', function(Blueprint $table)
+		Schema::create('notifications', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('user_id');
+			$table->integer('merchant_store_id');
+			$table->integer('sender');
+			$table->integer('recipient');
+			$table->text('description');
 			$table->integer('deal_id');
-			$table->string('comment')->nullable();
 			$table->integer('point')->default(0);
+			$table->integer('type')->default(1); // 1 la diem thuong, 2 la tin nhan cua he thong
 			$table->timestamps();
 		});
 	}
@@ -30,7 +33,7 @@ class CreateFeedbacksTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('feedbacks');
+		Schema::drop('notifications');
 	}
 
 }

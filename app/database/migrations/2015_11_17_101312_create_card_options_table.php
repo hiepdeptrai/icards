@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRatesTable extends Migration {
+class CreateCardOptionsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,14 @@ class CreateRatesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('rates', function(Blueprint $table)
+		Schema::create('card_options', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('user_id');
-			$table->integer('deal_id');
-			$table->integer('rate')->default(0);
+			$table->integer('card_id');
+			$table->integer('card_level_id');
+			$table->integer('merchant_id');
+			$table->integer('value_payment')->default(0);
+			$table->integer('discount')->default(0);
 			$table->timestamps();
 		});
 	}
@@ -29,7 +31,7 @@ class CreateRatesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('rates');
+		Schema::drop('card_options');
 	}
 
 }
