@@ -110,9 +110,9 @@ a.submenu:hover, a.submenu:focus{
 /* end login.blade.php */
 
 
-/* start create-card.blade.php */
+/* start create-trademark-card.blade.php */
 .right-section {
-  /*height: auto;*/
+  width: 80%;
 }
 .header-card {
   /*border-bottom: 1px solid #eff0f1;*/
@@ -175,7 +175,11 @@ a.submenu:hover, a.submenu:focus{
 }
 
 .current {
-  color: #f94876 !important;  
+  color: #f94876 !important;
+}
+
+.current span {
+  background-color: #f94876;
 }
 
 .content-card {

@@ -1,5 +1,1 @@
-@extends('layouts.index-merchant')
-
-@section('content')
-	xxx
-@stop
+@extends('layouts.merchant-master')

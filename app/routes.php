@@ -45,6 +45,11 @@ Route::get('/', function()
 });
 
 Route::controller('merchant','LoginMerchantController');
-Route::get('create-card', function(){
-	return View::make('merchant.merchant-leftbar');
+
+Route::get('trademark', function(){
+	return View::make('merchant.create-trademark-card');
+});
+
+Route::get('level', function(){
+	return View::make('merchant.create-level-card');
 });
