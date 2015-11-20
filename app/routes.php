@@ -15,40 +15,12 @@ Route::get('/', function()
 {
 	return View::make('merchant.index');
 });
-Route::get('khoi-tao-the', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('gui-tin-nhan', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('/', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('/', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('/', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('/', function()
-{
-	return View::make('merchant.index');
-});
-Route::get('/', function()
-{
-	return View::make('merchant.index');
-});
 
-Route::controller('merchant','LoginMerchantController');
+Route::get('merchant-login','LoginMerchantController@getLogin');
 
-Route::get('trademark', function(){
-	return View::make('merchant.create-trademark-card');
-});
+Route::post('merchant-login','LoginMerchantController@postLogin');
+
+Route::controller('merchant','MerchantController');
 
 Route::get('level', function(){
 	return View::make('merchant.create-level-card');

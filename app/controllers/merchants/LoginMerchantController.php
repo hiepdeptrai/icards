@@ -18,11 +18,18 @@ class LoginMerchantController extends BaseController
 
 	public function postLogin()
     {   
-        // dd(Input::all());
+        $messages = array(
+            'user_name.required'    => 'Vui lòng nhập email',
+            'user_name.email'    => 'Nhập sai định dạng email, vui lòng nhập lại',
+            'password.required'=>'Vui lòng nhập mật khẩu!',
+            'password.min'=>'Mật khẩu phải có ít nhất 6 ký tự.',
+          
+        );
         $validator=Validator::make(Input::all(),array(
-                    'user_name'=>Input::get('email'),
+                    'user_name'=>'required|email',
                     'password'=>'required|min:6'
-                ));
+                ), $messages);
+
 
             if($validator->fails())
             {
@@ -31,14 +38,13 @@ class LoginMerchantController extends BaseController
             }else{
 
 
-                 $field = filter_var(Input::get('email'), FILTER_VALIDATE_EMAIL) ? 'email' : 'user_name';
+                 $field = filter_var(Input::get('user_name'), FILTER_VALIDATE_EMAIL) ? 'email' : 'user_name';
 
                 $credentials = [
-                    $field => Input::get('email'),
+                    $field => Input::get('user_name'),
                     'password' => Input::get('password'),
-                    // 'type'=>1,
-                    'status'=>1,
-
+                    'type'=>2, //merchant
+                   
                 ];
 
                 $remember=(Input::has('remember')) ?true : false;
@@ -47,20 +53,11 @@ class LoginMerchantController extends BaseController
                 $auth=Auth::attempt($credentials, $remember);
                 
                 if($auth){
-
-                    if(Auth::user()->type ==1){
-                        return Redirect::intended('admin/contact');
-                    }
-                    else if(Auth::user()->type ==2)
-                    {
-                        return Redirect::intended('admin/profile');
-                    }
-                    
-                 
+                    return Redirect::intended('merchant/trademark-card');
                 }else{
                     //false
                     
-                    return Redirect::to('admin/login')->with('global','Username/Email hoặc mật khẩu không đúng!');
+                    return Redirect::to('merchant-login')->with('global','Email hoặc mật khẩu không đúng!');
                 }
                 
             }
