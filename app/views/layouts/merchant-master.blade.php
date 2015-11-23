@@ -26,7 +26,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3 left-section">
+			<div class="col-md-3 col-sm-12 left-section">
 				<div class="logo">
 					<img src="{{URL::asset('')}}images/logo.png" alt="logo" class="img-circle">
 					<h1>welcome!boss!</h1>
@@ -47,8 +47,8 @@
 					<p style="color:#fff;">Copyright 2015 iCards. All rights reserved!</p>
 				</div>
 			</div>
-			<div class="col-md-9 right-section">
-				<div class="row header">
+			<div class="col-md-9 col-sm-12 right-section">
+				<div class="row he col-exeader">
 					<div class="header-top">
 						<div class="col-md-8 header-top-left-card">
 							<div>1,389 thành viên</div>

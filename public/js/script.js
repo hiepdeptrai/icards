@@ -48,4 +48,10 @@ $(document).ready(function(){
 		    }
 	  	}
 	});
+
+	$("input").focus(function(){
+		$(this).css("border-color", "#f94876");
+	}).focusout(function(){
+		$(this).css("border-color", "silver");
+	});
 });

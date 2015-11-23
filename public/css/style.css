@@ -51,7 +51,7 @@
 
 .main-content {
 	background-color: white;
-	margin: 2% 10% 5% 10%;
+	margin: 2% 5% 5% 5%;
 	border-radius: 5px;
 	box-shadow: 3px 3px 1px #888888;
 }
@@ -174,4 +174,103 @@
 .year {
 	width: 83px;
     float: left;
+}
+
+.test span {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid #f94876;
+	padding: none;
+	float: left;
+	margin-right: 15px;
+	margin-top: 4px;
+}
+
+.test ul {
+	list-style-type: none;
+}
+
+.test ul li {
+	margin-bottom: 6px;
+}
+
+.test ul li a {
+	color: #000;
+}
+
+.test ul li a i {
+	color: #f94876;
+}
+
+.current1 {
+	background-color: #f94876;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+.table a {
+	color: #f94876;
+}
+
+.table .input-group {
+	width: 140px;
+}
+
+#rate-point {
+	width: 86px;
+}
+
+.table td {
+	text-align: center;
+}
+
+.table>tbody>tr>td {
+	border: none;
+}
+
+.table .form-group, .table .btn {
+	margin-top: -7px;
+}
+
+.table .btn {
+	background-color: #f94876;
+	color: white;
+}
+
+.table .fa-pencil {
+	margin-right: 15px;
+	color: #8c8c8c;
+}
+
+.table .name-level-card {
+	color: #f94876;
+	font-weight: bold;
+}
+
+.point-of-level {
+	border-bottom: 1px solid #8c8c8c;
+}
+
+#form-level h3 {
+	border-bottom: 1px solid #8c8c8c;
+	color: #f94876;
+	font-size: 20px;
+	padding-bottom: 7px;
+}
+
+#form-level .button-save {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.demo-level-mobile h3 {
+	color: #f94876;
+	font-size: 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 7px;
+	margin-top: 60px;
 }
