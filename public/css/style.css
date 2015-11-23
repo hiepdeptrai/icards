@@ -128,8 +128,8 @@
 }
 
 .img-logo {
-	width: 60px;
-	height: 60px;
+	width: 150px;
+	height: 150px;
 	border: 1px solid #ddd;
 	border-radius: 50%;
 	text-align: left;
@@ -174,4 +174,7 @@
 .year {
 	width: 83px;
     float: left;
+}
+.error{
+	color:#f94876;
 }

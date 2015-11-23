@@ -192,3 +192,8 @@ a.submenu:hover, a.submenu:focus{
   background-color: #ffffff;
   height: auto;
 }
+
+
+.form-label-custome{
+  font-weight: normal;
+}
