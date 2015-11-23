@@ -12,6 +12,7 @@ class UserTableSeeder extends Seeder
 			'password' => Hash::make('12344321'),
 			'type'     => 2,
 		));
+	
 	}
 
 }

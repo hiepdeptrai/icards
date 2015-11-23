@@ -20,21 +20,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+     
   </head>
   <body>
 	<div class="container-login">
     	<div class="wrap-login">
     		<div class="account-info">đăng nhập tài khoản<button class="glyphicon glyphicon-remove"></button></div>
     		<div class="container-form">
-    			<form >
+    			<form  action="{{URL::asset('')}}merchant-login" method="POST">
+
+                    <div class="form-group session text-center">
+                        <label style= "color:red;">{{Session::get('global')}}</label>
+                    </div>
+
 				  	<div class="form-group">
-					    <label for="email">Tên đăng nhập</label>
-					    <input name="user_name" type="email" class="form-control" id="email" placeholder="Tên đăng nhập">
-				  	</div>
+					    <label for="email">Email</label>
+					    <input name="user_name" type="text" class="form-control" id="email" placeholder="Email">
+				  	    @if($errors->has('user_name'))
+                            <p style= "color:red;">{{ $errors->first('user_name') }}</p>
+                        @endif
+                    </div>
 				  	<div class="form-group">
 					    <label for="password">Mật khẩu</label>
 					    <input name="password" type="password" class="form-control" id="password" placeholder="Mật khẩu">
-				  	</div>
+				  	    @if($errors->has('password'))
+                            <p style= "color:red;">{{ $errors->first('password') }}</p>
+                        @endif
+                    </div>
 				  	<div class="checkbox">
 					    <label>
 					      	<input name="remember" type="checkbox"> Ghi nhớ lần đăng nhập sau
@@ -51,9 +63,10 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{URL::asset('')}}js/jquery-1.11.3.min.js"></script>
+    <script src="{{URL::asset('')}}js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{URL::asset('')}}js/bootstrap.min.js"></script>
-    <script src="{{URL::asset('')}}js/custome.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+ 
   </body>
 </html>
