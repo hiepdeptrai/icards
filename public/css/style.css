@@ -128,8 +128,8 @@
 }
 
 .img-logo {
-	width: 60px;
-	height: 60px;
+	width: 150px;
+	height: 150px;
 	border: 1px solid #ddd;
 	border-radius: 50%;
 	text-align: left;
@@ -175,6 +175,7 @@
 	width: 83px;
     float: left;
 }
+<<<<<<< HEAD
 
 .test span {
 	width: 12px;
@@ -274,3 +275,7 @@
 	padding-bottom: 7px;
 	margin-top: 60px;
 }
+.error{
+	color:#f94876;
+}
+

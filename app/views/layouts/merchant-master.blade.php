@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+	<meta name="_token" content="{{ csrf_token() }}"/>
 	<title>@yield('title')</title>
 	
 	<!-- Bootstrap -->
@@ -17,10 +17,17 @@
     <link href="{{URL::asset('')}}js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="{{URL::asset('')}}js/jquery-ui-themes/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
 
+    <!-- <link href="{{URL::asset('')}}css/jquery.Jcrop.min.css" rel="stylesheet"> -->
+	<!-- <link href="{{URL::asset('')}}css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
+    
     <!-- js, jquery -->
     <script src="{{URL::asset('')}}js/jquery.min.js"></script>
+    <script src="{{URL::asset('')}}js/bootstrap.min.js"></script>
     <script src="{{URL::asset('')}}js/jquery-ui/jquery-ui.min.js"></script>
     <script src="{{URL::asset('')}}js/jquery-validate/dist/jquery.validate.min.js"></script>
+    <!-- <script src="{{URL::asset('')}}js/moment.min.js"></script>
+    <script src="{{URL::asset('')}}js/bootstrap-datetimepicker.min.js"></script> 
+    <script src="{{URL::asset('')}}js/jquery.Jcrop.min.js"></script> -->
     <script src="{{URL::asset('')}}js/script.js"></script>
 </head>
 <body>
