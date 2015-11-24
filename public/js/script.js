@@ -17,9 +17,9 @@ $(document).ready(function(){
 	$('#birthday').datepicker();
 
 	$("input").focus(function(){
-		$(this).css("border-color", "#f94876");
+		$(this).css({"border-color":"#f94876", "box-shadow":"1px 1px 10px #f94876"});
 	}).focusout(function(){
-		$(this).css("border-color", "silver");
+		$(this).css({"border-color":"silver", "box-shadow":"none"});
 	});
 
 });
