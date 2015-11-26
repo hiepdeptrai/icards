@@ -29,9 +29,9 @@ class MerchantController extends BaseController
 	}
 
 	//ham lay quan huyen tu tinh thanh pho
-	public function getDistrict()
+	public function getDistrict($city_id)
 	{
-		$city_id = Input::get('city_id');
+		// $city_id = Input::get('city_id');
 		$district=OptionValues::where('option_id',$city_id)->get();
 		return Response::json($district);
 	}

@@ -41,7 +41,7 @@
 				</div>
 				<div class="menu-left-bar">
 					<ul>
-						<li><a href="#"><i class="fa fa-cog"></i> Khởi tạo thẻ</a></li>
+						<li><a href="#" class="current"><i class="fa fa-cog"></i> Khởi tạo thẻ</a></li>
 						<li><a href="#"><i class="fa fa-paper-plane-o"></i> Gửi tin nhắn</a></li>
 						<li><a href="#"><i class="fa fa-tag"></i> Tạo ưu đãi</a></li>
 						<li><a href="#"><i class="fa fa-star"></i> Quản trị phản hồi</a></li>

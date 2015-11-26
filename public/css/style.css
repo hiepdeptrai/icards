@@ -216,14 +216,6 @@
 	color: #f94876;
 }
 
-.table .input-group {
-	width: 140px;
-}
-
-#rate-point {
-	width: 86px;
-}
-
 .table td {
 	text-align: center;
 }
@@ -232,7 +224,55 @@
 	border: none;
 }
 
-.table .form-group, .table .btn {
+.table .level-point {
+	border: 1px solid #8c8c8c;
+    width: 140px;
+    display: inline-block;
+    height: 33px;
+    margin-top: -7px;
+    border-radius: 3px;
+}
+
+.table .level-point input {
+	border: none;
+    width: 92px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.table .level-point>div {
+	width: 30px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 9px;
+}
+
+.table .level-rate {
+	border: 1px solid #8c8c8c;
+    width: 60px;
+    display: inline-block;
+    height: 33px;
+    margin-top: -7px;
+    border-radius: 3px;
+}
+
+.table .level-rate input {
+	border: none;
+    width: 25px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.table .level-rate>div {
+	width: 12px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 7px;
+}
+
+.table .btn {
 	margin-top: -7px;
 }
 
@@ -255,6 +295,12 @@
 	border-bottom: 1px solid #8c8c8c;
 }
 
+#level {
+	margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 #form-level h3 {
 	border-bottom: 1px solid #8c8c8c;
 	color: #f94876;
@@ -263,6 +309,7 @@
 }
 
 #form-level .button-save {
+	color: #fff;
 	margin-top: 20px;
 	text-align: center;
 	margin-bottom: 20px;
@@ -276,9 +323,9 @@
 .demo-level-mobile h3 {
 	color: #f94876;
 	font-size: 20px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #8c8c8c;
 	padding-bottom: 7px;
-	margin-top: 60px;
+	margin-top: 79px;
 }
 .error{
 	color:#f94876;
@@ -322,11 +369,16 @@
     font-size: 10px;
 }
 
+.demo-mobile-main-content p a {
+	color: #f94876;
+}
+
 .demo-mobile-main-content button {
 	background-color: #f94876;
     border-color: #f94876;
     width: 100px;
     margin-left: 51px;
+    color: #fff;
 }
 
 #demo-level-vvip {
@@ -371,6 +423,10 @@
     margin-left: 10px;
 }
 
+#chops {
+	display: none;
+}
+
 .type-chops>span {
 	width: 12px;
     height: 12px;
@@ -404,4 +460,157 @@
 	margin-bottom: 20px;
 	height: 550px;
 	text-align: left;
+}
+
+#form-chops {
+	margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#form-chops .chop-save-button {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#form-chops .chop-save-button button {
+	background-color: #f94876;
+	color: #fff;
+}
+
+.step {
+	margin-bottom: 40px;
+}
+
+.title-formal-card, .title-quantum-chops {
+	color: #f94876;
+    font-size: 20px;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 5px;
+}
+
+.formal-card .type-card {
+	list-style-type: none;
+}
+
+.formal-card .type-card li {
+	/*font-weight: bold;*/
+	cursor: pointer;
+	margin-bottom: 6px;
+}
+
+.formal-card .type-card li a {
+	color: #f94876;
+}
+
+.formal-card .type-card li span {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #f94876;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quantum-chops {
+	margin-top: 40px;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.quantum-chops .table .chop-input-value div {
+	border: 1px solid #8c8c8c;
+    height: 35px;
+    width: 100px;
+    padding-top: 6px;
+    border-radius: 3px;
+}
+
+input:focus {
+	outline: 0;
+}
+
+.quantum-chops .table .chop-input-value div input {
+	border: none;
+	width: 50px;
+}
+
+.quantum-chops .table .chop-input-value div input:focus {
+	outline: 0;
+}
+
+.chop-create-card-button {
+	margin-top: 0 !important;
+}
+
+.demo-title-chops-card {
+	margin-top: 95px;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 5px;
+    color: #f94876;
+    font-size: 20px;
+}
+
+.demo-chops-card {
+	background-color: #f1f2f3;
+	padding: 48px 26px;
+	border-radius: 5px;
+	margin: 20px 30px 30px 30px;
+}
+
+.demo-chops-card .demo-front-chops-card {
+    background: linear-gradient(to bottom right, #a03672, #853f91);
+    width: auto;
+    height: 185px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.demo-chops-card .demo-back-chops-card {
+	background: linear-gradient(to bottom right, #853f91, #a03672);
+    width: auto;
+    height: 185px;
+    border-radius: 5px;
+}
+
+.demo-front-chops-card img {
+	width: 65px;
+    position: relative;
+    top: -12px;
+    left: 44px;
+}
+
+.demo-front-chops-card i {
+	width: 65px;
+    position: relative;
+    top: 8px;
+    left: 174px;
+}
+
+.demo-front-chops-card p {
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+    left: 217px;
+    width: 107px;
+}
+
+.tick-star-1, .tick-star-2, .tick-star-3 {
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.tick-star-1 span, .tick-star-2 span, .tick-star-3 span {
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 11px;
+    margin-bottom: 9px;
+    color: #f94876;
+    float: left;
 }
