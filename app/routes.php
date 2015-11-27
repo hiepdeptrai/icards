@@ -25,3 +25,7 @@ Route::controller('merchant','MerchantController');
 Route::get('level', function(){
 	return View::make('merchant.create-level-card');
 });
+
+Route::get('shop-address', function(){
+	return View::make('merchant.create-shop-address');
+});

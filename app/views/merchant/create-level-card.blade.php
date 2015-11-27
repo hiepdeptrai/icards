@@ -24,16 +24,79 @@
 						 	<span class="current1"></span>
 						 	<a href="#">Loại thẻ Levels <a href="#"><i class="fa fa-info-circle"></i></a></a>
 						 	<ul><i>Vui lòng chọn 1 trong 3 hình thức đặt tên thẻ bên dưới</i>
-						 		<li><span></span><a href="#">03 hạng thẻ: Vàng, Bạc, Thành viên</a></li>
-						 		<li><span class="current1"></span><a href="#">03 hạng thẻ: VVIP, VIP, Newbie</a></li>
-						 		<li><span></span><a href="#">02 hạng thẻ: VIP, Newbie</a></li>
+						 		<li id="type-level-1"><span class="current1"></span><a href="#">03 hạng thẻ: Vàng, Bạc, Thành viên</a></li>
+						 		<li id="type-level-2"><span></span><a href="#">03 hạng thẻ: VVIP, VIP, Newbie</a></li>
+						 		<li id="type-level-3"><span></span><a href="#">02 hạng thẻ: VIP, Newbie</a></li>
 						 	</ul>
 					 	</li>
 					</ul>
 				</div>
 				<h3 style="border-bottom: 1px solid #8c8c8c; color: #f94876; font-size: 20px;">Giá trị điểm cần tích lũy &amp; Tỷ lệ điểm thưởng</h3>
 				<div class="point-of-level">
-					<table class="table">
+					<table class="table level-1">
+						<tr>
+							<td>Hạng thẻ <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td>Cần tích lũy <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td>% điểm thưởng <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="name-level-card">Vàng</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="1,000">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="15">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<input class="btn" type="submit" value="Tạo">
+							</td>
+						</tr>
+						<tr>
+							<td class="name-level-card">Bạc</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="500">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="10">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<input class="btn" type="submit" value="Tạo">
+							</td>
+						</tr>
+						<tr>
+							<td class="name-level-card">Thành viên</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="0">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="5">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a>
+							</td>
+						</tr>
+					</table>
+
+					<table class="table level-2">
 						<tr>
 							<td>Hạng thẻ <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
 							<td>Cần tích lũy <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
@@ -95,6 +158,70 @@
 							</td>
 						</tr>
 					</table>
+
+					<table class="table level-3">
+						<tr>
+							<td>Hạng thẻ <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td>Cần tích lũy <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td>% điểm thưởng <a href="#"><a href="#"><i class="fa fa-info-circle"></i></a></a></td>
+							<td></td>
+						</tr>
+						<!-- <tr>
+							<td class="name-level-card">VVIP</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="1,000">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="15">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<input class="btn" type="submit" value="Tạo">
+							</td>
+						</tr> -->
+						<tr>
+							<td class="name-level-card">VIP</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="500">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="10">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<input class="btn" type="submit" value="Tạo">
+							</td>
+						</tr>
+						<tr>
+							<td class="name-level-card">Newbie</td>
+							<td>
+							    <div class="level-point">
+							      	<input type="text" placeholder="0">
+							      	<div>Điểm</div>
+							    </div>
+							</td>
+							<td>
+							    <div class="level-rate">
+							      	<input type="text" placeholder="5">
+							      	<div>%</div>
+							    </div>
+							</td>
+							<td>
+								<a href="#"><i class="fa fa-pencil fa-lg"></i></a><a href="#"><i class="fa fa-trash fa-lg"></i></a>
+							</td>
+						</tr>
+					</table>
+
 					<p>* 1 điểm = 1,000 đ</p>
 				</div>
 				<div class="button-save">

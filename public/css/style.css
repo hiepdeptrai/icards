@@ -295,6 +295,14 @@
 	border-bottom: 1px solid #8c8c8c;
 }
 
+.point-of-level .level-2 {
+	display: none;
+}
+
+.point-of-level .level-3 {
+	display: none;
+}
+
 #level {
 	margin-top: 15px;
     margin-left: 30px;
@@ -613,4 +621,102 @@ input:focus {
     margin-bottom: 9px;
     color: #f94876;
     float: left;
+}
+
+#shop-address {
+	margin-top: 15px;
+    margin-left: 40px;
+}
+
+#form-shop-address h3 {
+	color: #f94876;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 5px;
+    margin-right: 60px;
+}
+
+#shop-address .table {
+    width: 65%;
+    margin-left: 55px;
+}
+
+#shop-address .table .title-store {
+	border: 1px solid #8c8c8c;
+    height: 34px;
+    box-shadow: none;
+    border-radius: 3px;
+    margin-top: -7px;
+}
+
+#shop-address .table .title-store input {
+	border: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#shop-address .table .address-store {
+	border: 1px solid #8c8c8c;
+    height: 34px;
+    border-radius: 3px;
+    margin-top: -7px;
+}
+
+#shop-address .table .address-store input {
+	border: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 330px;
+}
+
+.create-shop-account {
+	padding-bottom: 25px;
+}
+
+.create-shop-account .shop-login {
+	border: 1px solid #8c8c8c;
+	height: 34px;
+	border-radius: 3px;
+	margin-top: -7px;
+}
+
+.create-shop-account .shop-login input {
+	margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.create-shop-account .shop-password {
+	border: 1px solid #8c8c8c;
+	height: 34px;
+	border-radius: 3px;
+	margin-top: -7px;
+}
+
+.create-shop-account .shop-password input {
+	margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+#form-shop-address .create-shop-account {
+	border-bottom: 1px solid #8c8c8c;
+	margin-right: 60px;
+}
+
+#form-shop-address .button-save {
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+}
+
+#form-shop-address .button-save {
+	margin-bottom: 50px;
+}
+
+.table tr {
+	word-break: break-all;
 }
