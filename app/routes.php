@@ -29,3 +29,7 @@ Route::get('level', function(){
 Route::get('shop-address', function(){
 	return View::make('merchant.create-shop-address');
 });
+
+Route::get('confirm', function(){
+	return View::make('merchant.confirm');
+});
